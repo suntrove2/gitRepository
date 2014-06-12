@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/chefedDishImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:focusable="false" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/chefedDishText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chefedDishImage"
+        android:layout_centerHorizontal="true"
+        style="@style/DescriptionStyle"
+        >
+    </TextView>
+
+          
+</RelativeLayout>
+<!--
+暖色系
+android:background="#FFB6C1"
+蛋清凉
+android:background="#CAE1FF"CAE1FF 
+ -->

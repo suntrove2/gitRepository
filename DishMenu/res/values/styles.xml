@@ -1,0 +1,83 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+        <!-- Navigation item --><style name="NavigationItemStyle" parent="@android:style/TextAppearance.Widget.TextView.PopupMenu">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- Tilte style -->
+    <style name="TitleStyle" parent="@android:style/TextAppearance.WindowTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/layoutBackgroundTitle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- Description for dish style -->
+    <style name="DescriptionStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/myDishLsviewSeleced</item>
+        <item name="android:textColor">@color/whiteText</item>  
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- for GridView -->
+    <style name="DishStyleGridView" parent="@android:style/Widget.GridView">
+        <item name="android:listSelector">@color/gridSelected</item>
+        <item name="android:horizontalSpacing">4dip</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:verticalSpacing">4dip</item> 
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item> 
+    </style>
+    <!-- for dishStyle button -->
+        <style name="DishStyleButton" parent="@android:style/Widget.Button">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginBottom">14dp</item>       
+    </style>
+    
+     
+    <style name="TextViewInMydishlayout">	  
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_centerVertical">true</item>
+       <item name="android:textSize">12sp</item>
+       <item name="android:textColor">@color/whiteText</item>
+    </style>
+	<!-- for EditView and EditView in myDish_layout button -->
+    <style name="EditTextInMydishlayout">	  
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_centerVertical">true</item>
+       <item name="android:textSize">12sp</item>
+       <item name="android:textColorHint">@color/whiteText</item>   
+    </style> 
+    <style name="TextViewInMydishInfolayout">
+        <!-- for TextView in myDish_dishinfo_layout button -->	  
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_centerVertical">true</item>
+       <item name="android:textSize">12sp</item>
+       <item name="android:textColor">@color/whiteText</item>
+    </style>       
+</resources>

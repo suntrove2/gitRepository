@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="35.0dp"
+    android:background="@color/layoutBackgroundInfo">	    
+    <TextView android:id="@+id/dishPhotoInfo"    
+        android:text="@string/mydish_dishStyle"
+        android:layout_marginLeft="45dp"
+        style="@style/TextViewInMydishInfolayout"/>
+    <TextView android:id="@+id/dishNameInfo"
+        android:layout_marginLeft="118dp"
+        android:text="@string/mydish_dishName"
+		style="@style/TextViewInMydishInfolayout"/>
+    <TextView android:id="@+id/dishNumberInfo"
+        android:layout_marginLeft="200dp"
+        android:text="@string/mydish_dishNumber"
+        style="@style/TextViewInMydishInfolayout"/>
+   	<TextView android:id="@+id/dishPriceInfo"  
+   	    android:layout_marginLeft="275dp"     	
+       	android:text="@string/mydish_dishPrice"
+       	style="@style/TextViewInMydishInfolayout"/>	   	    
+</RelativeLayout>

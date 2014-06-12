@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:id="@+id/mydish_listview_item_layout" 
+  android:orientation="horizontal" 
+  android:layout_height="100.0dp" 
+  android:layout_width="match_parent" 
+  > 
+     <ImageView 
+        android:id="@+id/mydish_dishPhotoImgView" 
+        android:layout_width="100.dp" 
+        android:layout_height="60.dp"
+        android:scaleType="centerCrop" 
+     /> 
+     <TextView 
+        android:id="@+id/mydish_dishNameText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="112.0dp"
+    /> 
+    <TextView 
+        android:id="@+id/mydish_dishNumberText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="210.0dp" 
+    /> 
+    <TextView 
+        android:id="@+id/mydish_dishPriceText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="275.0dp" 
+    /> 
+</RelativeLayout>

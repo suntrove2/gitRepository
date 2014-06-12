@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dishImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+       >
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/identifierDishStyle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:background="@color/myDishLsviewSeleced"
+        android:layout_below="@id/dishImage"
+        >
+	    <TextView
+	        android:id="@+id/dishText"
+	        android:layout_width="0dp"	       
+	        android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+	        style="@style/DescriptionStyle"/>
+ 		<RelativeLayout android:id="@+id/price_layout"
+    		android:layout_width="20dp"
+    		android:layout_height="match_parent"
+    		android:layout_weight="0">
+    		<TextView
+    		    android:id="@+id/priceText"
+	        	android:layout_width="wrap_content"	       
+	        	android:layout_height="match_parent"
+	        	android:layout_alignParentRight="true"
+	        	android:paddingRight="1dp"	 
+	        	style="@style/DescriptionStyle"/>
+     		<TextView
+    		    android:id="@+id/rmbSymbolText"
+	        	android:layout_width="wrap_content"	       
+	        	android:layout_height="match_parent"
+	        	android:layout_toLeftOf="@id/priceText"
+	        	android:paddingRight="1dp"	        	
+	        	android:text="￥"
+	        	style="@style/DescriptionStyle"/>   		
+	      </RelativeLayout>
+	 </LinearLayout>
+
+
+</RelativeLayout>
+<!--
+暖色系
+android:background="#FFB6C1"
+蛋清凉
+android:background="#CAE1FF"CAE1FF 
+ -->

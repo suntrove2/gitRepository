@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chefDish_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <RelativeLayout
+        android:id="@+id/dishStyleButtonList"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+
+        <Button
+            android:id="@+id/dishStyleButton1"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" 
+            android:layout_marginTop="6dp"
+            android:background="@drawable/btn_selector"
+            />
+
+        <Button
+            android:id="@+id/dishStyleButton2"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/dishStyleButton1"
+            android:background="#5CACEE"/>
+
+        <Button
+            android:id="@+id/dishStyleButton3"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishStyleButton2"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/dishStyleButton4"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishStyleButton3"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/dishStyleButton5"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishStyleButton4"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/dishStyleButton6"
+            style="@style/DishStyleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dishStyleButton5"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/chefDishGridView"
+        style="@style/DishStyleGridView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"        
+        android:numColumns="3"
+        android:padding="4dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dip" 
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        />
+
+</LinearLayout>

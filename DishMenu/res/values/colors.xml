@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gridSelected">#f00</color>
+    <color name="layoutBackgroundTitle">#878787</color>
+    <color name="layoutBackgroundInfo">#B3B3B3</color><!--#FFB6C1 #CFCFCF -->
+    <color name="layoutBackgroundList">#CCCCCC</color> 
+    <color name="myDishBackground">#FFDAB9</color><!-- #C0C0C0 -->
+    <color name="myDishLsviewSeleced">#6495ED</color>
+    <color name="myDishLsviewFocused">#F08080</color><!--#CD6090-->
+    <color name="myDishTextView">#666666</color><!-- #DDA0DD F08080 -->
+    <color name="myDishEditText">#BC8F8F</color>
+    <color name="whiteText">#FFFFFF</color>
+</resources>

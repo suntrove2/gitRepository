@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#5E5E5E" >
+
+    <GridView
+        android:id="@+id/navigation_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+
+</LinearLayout>

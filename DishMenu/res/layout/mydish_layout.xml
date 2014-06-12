@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="35.0dp"
+	    android:background="@color/layoutBackgroundTitle">	    
+	    <TextView android:id="@+id/userText"    
+	        android:text="@string/user"
+	        style="@style/TextViewInMydishlayout"/>
+	    <EditText android:id="@+id/userName"
+	        android:layout_toRightOf="@id/userText"
+	        android:hint="贵哥"
+	        android:background="@null"
+	        style="@style/EditTextInMydishlayout"/>
+	    <TextView android:id="@+id/numberText"
+	        android:layout_marginLeft="90dp"
+	        android:text="@string/number"
+			style="@style/TextViewInMydishlayout"/>
+	    <EditText android:id="@+id/userNumbers"
+	        android:background="@null"
+	        android:numeric="integer"
+	        android:hint="2"
+	        android:layout_toRightOf="@id/numberText"	        
+	        style="@style/EditTextInMydishlayout"/>
+	    <TextView android:id="@+id/seatText"
+	        android:layout_marginLeft="170dp"
+	        android:text="@string/seat"
+	        style="@style/TextViewInMydishlayout"/>
+	    <EditText android:id="@+id/seatNumbers"
+	        android:background="@null"
+	        android:numeric="integer"
+	        android:hint="12"
+	        android:layout_toRightOf="@id/seatText"	        
+	        style="@style/EditTextInMydishlayout"/>
+    	<TextView android:id="@+id/totalPriceText"  
+    	    android:layout_marginLeft="250dp"     	
+        	android:text="@string/totalPrice"
+        	style="@style/TextViewInMydishlayout"/>	   	    
+	    <EditText android:id="@+id/totalPriceNumbers"
+	        android:background="@null"
+	        android:numeric="integer"
+	        android:hint="360"
+	        android:layout_toRightOf="@id/totalPriceText"       
+	        style="@style/EditTextInMydishlayout"/>           
+	</RelativeLayout>
+	<include
+			layout="@layout/mydish_dishinfo_layout"
+			android:id="@+id/mydish_info" />	
+	<ListView
+        android:id="@+id/mydish_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/mydish_lstv_selector"  
+       />
+</LinearLayout>
+	          
